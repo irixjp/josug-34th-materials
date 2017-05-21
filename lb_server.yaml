@@ -75,7 +75,7 @@ resources:
     properties:
       flavor: { get_param: flavor }
       image: { get_param: image }
-      key_name: { get_param: key_name }
+      key_name: { get_param: key }
       user_data_format: RAW
       user_data: { get_resource: server_init_web }
       networks:
