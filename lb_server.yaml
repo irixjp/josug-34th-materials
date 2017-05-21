@@ -49,7 +49,7 @@ resources:
       image: { get_param: image }
       key_name: { get_param: key }
       user_data_format: RAW
-      user_data: { get_resource: config_dummy_web }
+      user_data: { get_resource: config_simple_web }
       networks:
         - network: { get_param: private_network }
       security_groups:
