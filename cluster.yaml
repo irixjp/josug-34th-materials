@@ -103,7 +103,7 @@ resources:
   loadbalancer:
     type: OS::Neutron::LBaaS::LoadBalancer
     properties:
-      vip_subnet: { get_param: subnet }
+      vip_subnet: { get_param: private_subnet }
 
   floating_ip:
     type: OS::Neutron::FloatingIP
