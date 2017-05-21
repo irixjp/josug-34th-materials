@@ -50,7 +50,7 @@ resources:
             #! /bin/sh -v
             Body=$(hostname)
             Response="HTTP/1.1 200 OK\r\nContent-Length: ${#Body}\r\n\r\n$Body"
-            while true ; do echo -e $Response | nc -llp $_PORT; done
+            nohup bash -c 'while true ; do echo -e $Response | nc -llp $_PORT; done' &
 
   config_send_notify:
     type: OS::Heat::SoftwareConfig
