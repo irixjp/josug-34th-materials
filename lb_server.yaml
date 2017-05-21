@@ -29,15 +29,15 @@ parameters:
     description: Pool to contact
 
 resources:
-  wait_handle:
-    type: OS::Heat::WaitConditionHandle
-
-  wait_condition:
-    type: OS::Heat::WaitCondition
-    properties:
-      handle: { get_resource: wait_handle }
-      count: 1
-      timeout: 300
+#  wait_handle:
+#    type: OS::Heat::WaitConditionHandle
+# 
+#  wait_condition:
+#    type: OS::Heat::WaitCondition
+#    properties:
+#      handle: { get_resource: wait_handle }
+#      count: 1
+#      timeout: 300
 
   config_dummy_web:
     type: OS::Heat::SoftwareConfig
@@ -52,22 +52,22 @@ resources:
             Response="HTTP/1.1 200 OK\r\nContent-Length: ${#Body}\r\n\r\n$Body"
             while true ; do echo -e $Response | nc -llp $_PORT; done
 
-  config_send_notify:
-    type: OS::Heat::SoftwareConfig
-    properties:
-      config:
-        str_replace:
-          params:
-            __heat_wc_notify: { get_attr: ['wait_handle', 'curl_cli'] }
-          template: |
-            #!/bin/bash -ex
-            __heat_wc_notify --data-binary '{"status": "SUCCESS"}'
+#  config_send_notify:
+#    type: OS::Heat::SoftwareConfig
+#    properties:
+#      config:
+#        str_replace:
+#          params:
+#            __heat_wc_notify: { get_attr: ['wait_handle', 'curl_cli'] }
+#          template: |
+#            #!/bin/bash -ex
+#            __heat_wc_notify --data-binary '{"status": "SUCCESS"}'
 
   server_init_web:
     type: OS::Heat::MultipartMime
     properties:
       parts:
-      - config: { get_resource: config_send_notify }
+#      - config: { get_resource: config_send_notify }
       - config: { get_resource: config_dummy_web }
 
   server:
