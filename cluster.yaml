@@ -75,7 +75,7 @@ resources:
           private_subnet: { get_param: private_subnet }
           sec_group: { get_resource: sec_group }
           app_port: { get_param: app_port }
-          pool_id: { get_resource: pool }
+          pool: { get_resource: pool }
 
   monitor:
     type: OS::Neutron::LBaaS::HealthMonitor
