@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>01-basic_operations</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01-basic_server_operations</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11791,7 +11791,28 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#35469;&#35388;&#24773;&#22577;&#12398;&#35501;&#12415;&#36796;&#12415;">&#35469;&#35388;&#24773;&#22577;&#12398;&#35501;&#12415;&#36796;&#12415;<a class="anchor-link" href="#&#35469;&#35388;&#24773;&#22577;&#12398;&#35501;&#12415;&#36796;&#12415;">&#182;</a></h4><p>openrc に演習用環境を利用するための認証情報が記載されています。各種コマンドで操作を行う前に、このファイルを読み込んで、環境変数へ認証情報を設定しておきます。</p>
+<p>ssh で 192.168.99.199 で接続してください(openstack/openstack)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>root ユーザのホームディレクトリには OpenStack を管理者ユーザーで使うための設定ファイルが保存されています。</p>
+<p>openstack ユーザのホームディレクトリには OpenStack を一般ユーザで使うための設定ファイルが保存されています。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#35469;&#35388;&#24773;&#22577;&#12398;&#35501;&#12415;&#36796;&#12415;&#65288;openstack&#12518;&#12540;&#12470;&#12391;&#23455;&#26045;&#12375;&#12390;&#12356;&#12414;&#12377;&#65289;">&#35469;&#35388;&#24773;&#22577;&#12398;&#35501;&#12415;&#36796;&#12415;&#65288;openstack&#12518;&#12540;&#12470;&#12391;&#23455;&#26045;&#12375;&#12390;&#12356;&#12414;&#12377;&#65289;<a class="anchor-link" href="#&#35469;&#35388;&#24773;&#22577;&#12398;&#35501;&#12415;&#36796;&#12415;&#65288;openstack&#12518;&#12540;&#12470;&#12391;&#23455;&#26045;&#12375;&#12390;&#12356;&#12414;&#12377;&#65289;">&#182;</a></h4><p>openrc に演習用環境を利用するための認証情報が記載されています。各種コマンドで操作を行う前に、このファイルを読み込んで、環境変数へ認証情報を設定しておきます。</p>
 
 </div>
 </div>
@@ -11881,8 +11902,18 @@ export OS_PASSWORD=openstack
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#21021;&#26399;&#29366;&#24907;&#12398;&#30906;&#35469;&#65288;openstack/openstack-&#12391;&#12525;&#12464;&#12452;&#12531;&#65289;">&#21021;&#26399;&#29366;&#24907;&#12398;&#30906;&#35469;&#65288;openstack/openstack &#12391;&#12525;&#12464;&#12452;&#12531;&#65289;<a class="anchor-link" href="#&#21021;&#26399;&#29366;&#24907;&#12398;&#30906;&#35469;&#65288;openstack/openstack-&#12391;&#12525;&#12464;&#12452;&#12531;&#65289;">&#182;</a></h4><p>初期状態では、管理者が設定する public ネットワーク、Cirrosイメージ作成されています。
+<h4 id="&#21021;&#26399;&#29366;&#24907;&#12398;&#30906;&#35469;&#65288;&#19968;&#33324;&#12518;&#12540;&#12470;&#12540;&#12398;&#21021;&#26399;&#29366;&#24907;&#65289;">&#21021;&#26399;&#29366;&#24907;&#12398;&#30906;&#35469;&#65288;&#19968;&#33324;&#12518;&#12540;&#12470;&#12540;&#12398;&#21021;&#26399;&#29366;&#24907;&#65289;<a class="anchor-link" href="#&#21021;&#26399;&#29366;&#24907;&#12398;&#30906;&#35469;&#65288;&#19968;&#33324;&#12518;&#12540;&#12470;&#12540;&#12398;&#21021;&#26399;&#29366;&#24907;&#65289;">&#182;</a></h4><p>初期状態では、管理者が設定する public ネットワーク、Cirrosイメージ作成されています。
 みなさんがユーザとしてOpenStackを使う場合は、この状態からのスタートになります。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>VMはありません</p>
 
 </div>
 </div>
@@ -11919,6 +11950,16 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>管理者が作成した public ネットワークのみが存在しています。</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
@@ -11953,6 +11994,16 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>今回の演習用に作成したキーペアが作成されています。</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
@@ -11986,6 +12037,16 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>テスト用のOSイメージが登録されています。</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
@@ -12018,6 +12079,16 @@ export OS_PASSWORD=openstack
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>フレーバー（AWSのインスタンスタイプ）が予めいくつか定義されています。これは管理者が設定します。</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -12055,6 +12126,16 @@ export OS_PASSWORD=openstack
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>管理的なファイアーウォール機能が予め２つ定義されています。default は初期状態で存在し、すべての通信（→VM）を遮断します。ここでは open-all という全ての通信を許可するルールを演習用に作成しています。</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
