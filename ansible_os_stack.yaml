@@ -1,0 +1,94 @@
+- name: create stack by heat simple-server.yaml
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  max_fail_percentage: 0
+
+  tasks:
+    - set_fact: ansible_python_interpreter=/home/openstack/.virtualenvs/ansible/bin/python
+    - os_stack:
+        name: "simple-server"
+        cloud: handson1
+        state: present
+        template: "simple-system.yaml"
+        wait: yes
+      register: stack_return
+
+    - set_fact:
+        os_servers: "{{ result[0].output_value }}"
+      vars:
+        query: "[?output_key=='server_ip']"
+        result: "{{ stack_return.stack.outputs | json_query(query) }}"
+
+    - set_fact:
+        private_key: "{{ result[0].output_value }}"
+      vars:
+        query: "[?output_key=='private_key']"
+        result: "{{ stack_return.stack.outputs | json_query(query) }}"
+
+    - debug: var=os_servers
+    - debug: var=private_key
+
+- name: make in-memory inventory from heat-outputs
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  max_fail_percentage: 0
+
+  tasks:
+    - add_host:
+        name: "{{ item }}"
+        groups: os_servers
+      with_items:
+        - "{{ os_servers }}"
+
+    - debug:
+        var: groups
+
+- name: prepare keypair file for os_servers
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  max_fail_percentage: 0
+
+  tasks:
+    - shell: |
+        if [ -e private_key.pem ]; then rm -f private_key.pem; fi
+        echo "{{ private_key }}" > private_key.pem
+        chmod 600 private_key.pem
+
+- name: wait instance boot
+  hosts: os_servers
+  gather_facts: no
+  max_fail_percentage: 0
+  remote_user: cirros
+  vars:
+    ansible_ssh_private_key_file: private_key.pem
+
+  tasks:
+
+    - wait_for:
+        port: 22
+        host: "{{ ansible_host|default(ansible_ssh_host|default(inventory_hostname)) }}"
+        state: started
+        delay: 3
+      connection: local
+
+- name: configure and launch web server
+  hosts: os_servers
+  gather_facts: no
+  max_fail_percentage: 0
+  remote_user: cirros
+  become: yes
+  vars:
+    ansible_ssh_private_key_file: private_key.pem
+
+  tasks:
+
+    - raw: hostname
+      register: result_hostname
+    - raw: ls -1 --color=never /
+      register: result_ls
+
+    - debug: var=result_hostname
+    - debug: var=result_ls

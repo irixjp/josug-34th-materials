@@ -1,0 +1,129 @@
+heat_template_version: 2015-10-15
+
+description: |
+  セキュリティグループの作成
+  仮想ネットワークを作成
+  仮想ネットワークとルーターを接続
+  論理ポートの作成と、Floating IPの割り当て
+  仮想サーバーの起動
+
+parameters:
+  flavor:
+    type: string
+    default: m1.tiny
+  image:
+    type: string
+    default: cirros-0.3.5
+  public_network:
+    type: string
+    default: public
+  ext_router:
+    type: string
+    default: Ext-Router
+  key:
+    type: string
+    default: demo-key
+
+resources:
+  # セキュリティグループ
+  sec_group:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      rules:
+      - remote_ip_prefix: 0.0.0.0/0
+        protocol: tcp
+        port_range_min: 1
+        port_range_max: 65535
+
+  # キーペア
+  key_pair:
+    type: OS::Nova::KeyPair
+    properties:
+      name: { get_param: key }
+      save_private_key: true
+
+  # 仮想ネットワーク
+  heat_network:
+    type: OS::Neutron::Net
+    properties:
+      name: heat-net
+
+  # 仮想サブネット
+  heat_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      name: heat-subnet
+      ip_version: 4
+      network_id: { get_resource: heat_network }
+      cidr: 172.16.22.0/24
+      gateway_ip: 172.16.22.254
+      enable_dhcp: True
+
+  # 仮想ルーターへの接続
+  router_interface:
+    type: OS::Neutron::RouterInterface
+    properties:
+      router: { get_param: ext_router }
+      subnet: { get_resource: heat_subnet }
+
+  # 論理ポートの作成
+  neutron_port1_eth0:
+    type: OS::Neutron::Port
+    properties:
+      network: { get_resource: heat_network }
+      security_groups:
+        - open-all
+  neutron_port2_eth0:
+    type: OS::Neutron::Port
+    properties:
+      network: { get_resource: heat_network }
+      security_groups:
+        - open-all
+
+  # Floating IPの作成
+  floating_ip1:
+    type: OS::Neutron::FloatingIP
+    properties:
+      floating_network: { get_param: public_network }
+  floating_ip2:
+    type: OS::Neutron::FloatingIP
+    properties:
+      floating_network: { get_param: public_network }
+
+  # 論理ポートへの割り当て
+  floating_ip_assoc1:
+    type: OS::Neutron::FloatingIPAssociation
+    properties:
+      floatingip_id: { get_resource: floating_ip1 }
+      port_id: { get_resource: neutron_port1_eth0 }
+  floating_ip_assoc2:
+    type: OS::Neutron::FloatingIPAssociation
+    properties:
+      floatingip_id: { get_resource: floating_ip2 }
+      port_id: { get_resource: neutron_port2_eth0 }
+
+  # 仮想サーバー
+  server1:
+    type: OS::Nova::Server
+    properties:
+      flavor: { get_param: flavor }
+      image: { get_param: image }
+      key_name: { get_resource: key_pair }
+      networks:
+        - port: { get_resource: neutron_port1_eth0 }
+  server2:
+    type: OS::Nova::Server
+    properties:
+      flavor: { get_param: flavor }
+      image: { get_param: image }
+      key_name: { get_resource: key_pair }
+      networks:
+        - port: { get_resource: neutron_port2_eth0 }
+
+outputs:
+  server_ip:
+    value:
+      - { get_attr: [floating_ip1, floating_ip_address] }
+      - { get_attr: [floating_ip2, floating_ip_address] }
+  private_key:
+    value: { get_attr: [ key_pair, private_key ] }
