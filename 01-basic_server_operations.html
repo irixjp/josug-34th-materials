@@ -11730,9 +11730,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11753,7 +11751,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11777,8 +11775,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11786,8 +11783,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11796,8 +11792,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11807,8 +11802,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11819,7 +11813,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>cat ~/openrc
@@ -11834,7 +11828,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>export OS_AUTH_URL=http://192.168.99.199:5000/v2.0
@@ -11853,7 +11849,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">source</span> ~/openrc
@@ -11866,7 +11862,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>env <span class="p">|</span> grep OS_
@@ -11881,7 +11877,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre><span class="ansi-red-intense-fg ansi-bold">OS_</span>REGION_NAME=RegionOne
@@ -11897,8 +11895,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11908,8 +11905,7 @@ export OS_PASSWORD=openstack
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11920,7 +11916,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova list
@@ -11935,7 +11931,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+----+------+--------+------------+-------------+----------+
@@ -11950,8 +11948,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11962,7 +11959,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron net-list
@@ -11977,7 +11974,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+----------------------------------+--------+----------------------------------+
@@ -11994,8 +11993,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12006,7 +12004,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova keypair-list
@@ -12021,7 +12019,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+--------+------+-------------------------------------------------+
@@ -12037,8 +12037,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12049,7 +12048,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>openstack image list
@@ -12064,12 +12063,15 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+--------------------------------------+--------------+--------+
 | ID                                   | Name         | Status |
 +--------------------------------------+--------------+--------+
+| 6466641d-f5e5-4cf5-8fe0-549a6a8a45d7 | CentOS7      | active |
 | 66722486-ac79-4cd2-9a7d-c2479a9f6f92 | cirros-0.3.5 | active |
 +--------------------------------------+--------------+--------+
 </pre>
@@ -12080,8 +12082,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12092,7 +12093,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova flavor-list
@@ -12107,18 +12108,17 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>+----+-----------+-----------+------+-----------+------+-------+-------------+-----------+
-| ID | Name      | Memory_MB | Disk | Ephemeral | Swap | VCPUs | RXTX_Factor | Is_Public |
-+----+-----------+-----------+------+-----------+------+-------+-------------+-----------+
-| 1  | m1.tiny   | 512       | 1    | 0         |      | 1     | 1.0         | True      |
-| 2  | m1.small  | 2048      | 20   | 0         |      | 1     | 1.0         | True      |
-| 3  | m1.medium | 4096      | 40   | 0         |      | 2     | 1.0         | True      |
-| 4  | m1.large  | 8192      | 80   | 0         |      | 4     | 1.0         | True      |
-| 5  | m1.xlarge | 16384     | 160  | 0         |      | 8     | 1.0         | True      |
-+----+-----------+-----------+------+-----------+------+-------+-------------+-----------+
+<pre>+----+----------+-----------+------+-----------+------+-------+-------------+-----------+
+| ID | Name     | Memory_MB | Disk | Ephemeral | Swap | VCPUs | RXTX_Factor | Is_Public |
++----+----------+-----------+------+-----------+------+-------+-------------+-----------+
+| 1  | m1.tiny  | 512       | 1    | 0         |      | 1     | 1.0         | True      |
+| 2  | m1.small | 1024      | 10   | 0         |      | 1     | 1.0         | True      |
++----+----------+-----------+------+-----------+------+-------+-------------+-----------+
 </pre>
 </div>
 </div>
@@ -12127,8 +12127,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12139,7 +12138,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron security-group-list
@@ -12154,7 +12153,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+---------------------------------+----------+---------------------------------+
@@ -12185,8 +12186,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12204,8 +12204,16 @@ export OS_PASSWORD=openstack
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Webのダッシュボードから、Network → Network Topology を開いておくと、変化がわかりやすいくなります。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12213,8 +12221,7 @@ export OS_PASSWORD=openstack
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12225,7 +12232,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron router-create Ext-Router
@@ -12240,7 +12247,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created a new router:
@@ -12250,19 +12259,85 @@ export OS_PASSWORD=openstack
 | admin_state_up          | True                                 |
 | availability_zone_hints |                                      |
 | availability_zones      |                                      |
-| created_at              | 2017-05-21T09:28:42Z                 |
+| created_at              | 2017-06-09T02:46:20Z                 |
 | description             |                                      |
 | external_gateway_info   |                                      |
 | flavor_id               |                                      |
-| id                      | 7e53e749-5632-4f86-9cc8-db399d35d527 |
+| id                      | e22b32e2-7b77-4a1d-880b-8b659339ec67 |
 | name                    | Ext-Router                           |
 | project_id              | 44be7b065a154e33aacbe7dbca18c6be     |
 | revision_number         | 3                                    |
 | routes                  |                                      |
 | status                  | ACTIVE                               |
 | tenant_id               | 44be7b065a154e33aacbe7dbca18c6be     |
-| updated_at              | 2017-05-21T09:28:42Z                 |
+| updated_at              | 2017-06-09T02:46:20Z                 |
 +-------------------------+--------------------------------------+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>neutron router-list
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>+--------------------------------------+------------+-----------------------+
+| id                                   | name       | external_gateway_info |
++--------------------------------------+------------+-----------------------+
+| e22b32e2-7b77-4a1d-880b-8b659339ec67 | Ext-Router | null                  |
++--------------------------------------+------------+-----------------------+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>neutron router-gateway-set Ext-Router public
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Set gateway for router Ext-Router
 </pre>
 </div>
 </div>
@@ -12288,82 +12363,22 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>+--------------------------------------+------------+-----------------------+
-| id                                   | name       | external_gateway_info |
-+--------------------------------------+------------+-----------------------+
-| 7e53e749-5632-4f86-9cc8-db399d35d527 | Ext-Router | null                  |
-+--------------------------------------+------------+-----------------------+
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>neutron router-gateway-set Ext-Router public
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Set gateway for router Ext-Router
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>neutron router-list
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+--------------------------------+------------+--------------------------------+
 | id                             | name       | external_gateway_info          |
 +--------------------------------+------------+--------------------------------+
-| 7e53e749-5632-4f86-9cc8-db399d | Ext-Router | {&#34;network_id&#34;: &#34;17e4bba8-2a15  |
-| 35d527                         |            | -46fb-ab54-fb463aee503c&#34;,      |
+| e22b32e2-7b77-4a1d-880b-       | Ext-Router | {&#34;network_id&#34;: &#34;17e4bba8-2a15  |
+| 8b659339ec67                   |            | -46fb-ab54-fb463aee503c&#34;,      |
 |                                |            | &#34;enable_snat&#34;: true,           |
 |                                |            | &#34;external_fixed_ips&#34;:          |
 |                                |            | [{&#34;subnet_id&#34;: &#34;a271b0a1-c912  |
 |                                |            | -492c-858e-d5bd41888246&#34;,      |
 |                                |            | &#34;ip_address&#34;:                  |
-|                                |            | &#34;192.168.99.203&#34;}]}            |
+|                                |            | &#34;192.168.99.208&#34;}]}            |
 +--------------------------------+------------+--------------------------------+
 </pre>
 </div>
@@ -12373,8 +12388,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12385,7 +12399,7 @@ export OS_PASSWORD=openstack
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron net-create work-net
@@ -12400,7 +12414,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created a new network:
@@ -12410,9 +12426,9 @@ export OS_PASSWORD=openstack
 | admin_state_up          | True                                 |
 | availability_zone_hints |                                      |
 | availability_zones      |                                      |
-| created_at              | 2017-05-21T09:29:02Z                 |
+| created_at              | 2017-06-09T02:46:38Z                 |
 | description             |                                      |
-| id                      | 6e6eaff6-0f3b-4ed6-9e26-fad732dd0362 |
+| id                      | 318b7297-2c0e-4bc0-9604-70d85837647f |
 | ipv4_address_scope      |                                      |
 | ipv6_address_scope      |                                      |
 | mtu                     | 1450                                 |
@@ -12425,8 +12441,101 @@ export OS_PASSWORD=openstack
 | subnets                 |                                      |
 | tags                    |                                      |
 | tenant_id               | 44be7b065a154e33aacbe7dbca18c6be     |
-| updated_at              | 2017-05-21T09:29:02Z                 |
+| updated_at              | 2017-06-09T02:46:38Z                 |
 +-------------------------+--------------------------------------+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>neutron net-list
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>+---------------------------------+----------+---------------------------------+
+| id                              | name     | subnets                         |
++---------------------------------+----------+---------------------------------+
+| 17e4bba8-2a15-46fb-             | public   | a271b0a1-c912-492c-858e-        |
+| ab54-fb463aee503c               |          | d5bd41888246                    |
+| 318b7297-2c0e-                  | work-net |                                 |
+| 4bc0-9604-70d85837647f          |          |                                 |
++---------------------------------+----------+---------------------------------+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>neutron subnet-create --ip-version <span class="m">4</span> --gateway <span class="m">172</span>.16.11.254 --name work-subnet work-net <span class="m">172</span>.16.11.0/24
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created a new subnet:
++-------------------+--------------------------------------------------+
+| Field             | Value                                            |
++-------------------+--------------------------------------------------+
+| allocation_pools  | {&#34;start&#34;: &#34;172.16.11.1&#34;, &#34;end&#34;: &#34;172.16.11.253&#34;} |
+| cidr              | 172.16.11.0/24                                   |
+| created_at        | 2017-06-09T02:46:48Z                             |
+| description       |                                                  |
+| dns_nameservers   |                                                  |
+| enable_dhcp       | True                                             |
+| gateway_ip        | 172.16.11.254                                    |
+| host_routes       |                                                  |
+| id                | 3f782ee7-faf5-460f-852f-dcfc4287c737             |
+| ip_version        | 4                                                |
+| ipv6_address_mode |                                                  |
+| ipv6_ra_mode      |                                                  |
+| name              | work-subnet                                      |
+| network_id        | 318b7297-2c0e-4bc0-9604-70d85837647f             |
+| project_id        | 44be7b065a154e33aacbe7dbca18c6be                 |
+| revision_number   | 2                                                |
+| service_types     |                                                  |
+| subnetpool_id     |                                                  |
+| tenant_id         | 44be7b065a154e33aacbe7dbca18c6be                 |
+| updated_at        | 2017-06-09T02:46:48Z                             |
++-------------------+--------------------------------------------------+
 </pre>
 </div>
 </div>
@@ -12452,7 +12561,9 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+---------------------------------+----------+---------------------------------+
@@ -12460,8 +12571,8 @@ export OS_PASSWORD=openstack
 +---------------------------------+----------+---------------------------------+
 | 17e4bba8-2a15-46fb-             | public   | a271b0a1-c912-492c-858e-        |
 | ab54-fb463aee503c               |          | d5bd41888246                    |
-| 6e6eaff6-0f3b-                  | work-net |                                 |
-| 4ed6-9e26-fad732dd0362          |          |                                 |
+| 318b7297-2c0e-                  | work-net | 3f782ee7-faf5-460f-852f-        |
+| 4bc0-9604-70d85837647f          |          | dcfc4287c737 172.16.11.0/24     |
 +---------------------------------+----------+---------------------------------+
 </pre>
 </div>
@@ -12476,95 +12587,6 @@ export OS_PASSWORD=openstack
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>neutron subnet-create --ip-version <span class="m">4</span> --gateway <span class="m">172</span>.16.11.254 --name work-subnet work-net <span class="m">172</span>.16.11.0/24
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Created a new subnet:
-+-------------------+--------------------------------------------------+
-| Field             | Value                                            |
-+-------------------+--------------------------------------------------+
-| allocation_pools  | {&#34;start&#34;: &#34;172.16.11.1&#34;, &#34;end&#34;: &#34;172.16.11.253&#34;} |
-| cidr              | 172.16.11.0/24                                   |
-| created_at        | 2017-05-21T09:29:17Z                             |
-| description       |                                                  |
-| dns_nameservers   |                                                  |
-| enable_dhcp       | True                                             |
-| gateway_ip        | 172.16.11.254                                    |
-| host_routes       |                                                  |
-| id                | 54718494-45cf-41e4-8a7e-c4c36ba90d0d             |
-| ip_version        | 4                                                |
-| ipv6_address_mode |                                                  |
-| ipv6_ra_mode      |                                                  |
-| name              | work-subnet                                      |
-| network_id        | 6e6eaff6-0f3b-4ed6-9e26-fad732dd0362             |
-| project_id        | 44be7b065a154e33aacbe7dbca18c6be                 |
-| revision_number   | 2                                                |
-| service_types     |                                                  |
-| subnetpool_id     |                                                  |
-| tenant_id         | 44be7b065a154e33aacbe7dbca18c6be                 |
-| updated_at        | 2017-05-21T09:29:17Z                             |
-+-------------------+--------------------------------------------------+
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>neutron net-list
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>+---------------------------------+----------+---------------------------------+
-| id                              | name     | subnets                         |
-+---------------------------------+----------+---------------------------------+
-| 17e4bba8-2a15-46fb-             | public   | a271b0a1-c912-492c-858e-        |
-| ab54-fb463aee503c               |          | d5bd41888246                    |
-| 6e6eaff6-0f3b-                  | work-net | 54718494-45cf-41e4-8a7e-        |
-| 4ed6-9e26-fad732dd0362          |          | c4c36ba90d0d 172.16.11.0/24     |
-+---------------------------------+----------+---------------------------------+
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron router-interface-add Ext-Router work-subnet
 </pre></div>
 
@@ -12577,10 +12599,12 @@ export OS_PASSWORD=openstack
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Added interface 8bfa4a6b-aac1-4ffc-9fd6-a872d194fdd6 to router Ext-Router.
+<pre>Added interface ac501e70-35a9-45f8-8233-804c5859ee91 to router Ext-Router.
 </pre>
 </div>
 </div>
@@ -12589,8 +12613,7 @@ export OS_PASSWORD=openstack
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12603,7 +12626,7 @@ Cirrosというテスト用のOSイメージを使って仮想マシンを作成
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="k">function</span> get_uuid <span class="o">()</span> <span class="o">{</span> cat - <span class="p">|</span> grep <span class="s2">&quot; id &quot;</span> <span class="p">|</span> awk <span class="s1">&#39;{print $4}&#39;</span><span class="p">;</span> <span class="o">}</span>
@@ -12624,7 +12647,9 @@ test-vm-1
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+--------------------------------------+-----------------------------------------------------+
@@ -12639,13 +12664,13 @@ test-vm-1
 | OS-SRV-USG:terminated_at             | -                                                   |
 | accessIPv4                           |                                                     |
 | accessIPv6                           |                                                     |
-| adminPass                            | Sj8FGTX5Hfe2                                        |
+| adminPass                            | QNDB7dJ8XpT8                                        |
 | config_drive                         |                                                     |
-| created                              | 2017-05-21T09:44:36Z                                |
+| created                              | 2017-06-09T02:47:06Z                                |
 | description                          | -                                                   |
 | flavor                               | m1.tiny (1)                                         |
 | hostId                               |                                                     |
-| id                                   | b584bbde-38d3-41e5-a062-784b55d56aa0                |
+| id                                   | 5c16c5b4-7362-493a-9c61-2b9b423e2e7c                |
 | image                                | cirros-0.3.5 (66722486-ac79-4cd2-9a7d-c2479a9f6f92) |
 | key_name                             | my-key                                              |
 | locked                               | False                                               |
@@ -12657,7 +12682,7 @@ test-vm-1
 | status                               | BUILD                                               |
 | tags                                 | []                                                  |
 | tenant_id                            | 44be7b065a154e33aacbe7dbca18c6be                    |
-| updated                              | 2017-05-21T09:44:36Z                                |
+| updated                              | 2017-06-09T02:47:06Z                                |
 | user_id                              | 8e9f38ff948143899c04c764848ef8d3                    |
 +--------------------------------------+-----------------------------------------------------+
 </pre>
@@ -12668,8 +12693,7 @@ test-vm-1
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12680,7 +12704,7 @@ test-vm-1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova list
@@ -12695,14 +12719,16 @@ test-vm-1
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>+--------------------------------------+-----------+--------+------------+-------------+----------+
-| ID                                   | Name      | Status | Task State | Power State | Networks |
-+--------------------------------------+-----------+--------+------------+-------------+----------+
-| b584bbde-38d3-41e5-a062-784b55d56aa0 | test-vm-1 | BUILD  | spawning   | NOSTATE     |          |
-+--------------------------------------+-----------+--------+------------+-------------+----------+
+<pre>+--------------------------------------+-----------+--------+------------+-------------+----------------------+
+| ID                                   | Name      | Status | Task State | Power State | Networks             |
++--------------------------------------+-----------+--------+------------+-------------+----------------------+
+| 5c16c5b4-7362-493a-9c61-2b9b423e2e7c | test-vm-1 | ACTIVE | -          | Running     | work-net=172.16.11.8 |
++--------------------------------------+-----------+--------+------------+-------------+----------------------+
 </pre>
 </div>
 </div>
@@ -12711,8 +12737,7 @@ test-vm-1
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12723,7 +12748,7 @@ test-vm-1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova list
@@ -12738,13 +12763,15 @@ test-vm-1
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+--------------------------------------+-----------+--------+------------+-------------+----------------------+
 | ID                                   | Name      | Status | Task State | Power State | Networks             |
 +--------------------------------------+-----------+--------+------------+-------------+----------------------+
-| b584bbde-38d3-41e5-a062-784b55d56aa0 | test-vm-1 | ACTIVE | -          | Running     | work-net=172.16.11.9 |
+| 5c16c5b4-7362-493a-9c61-2b9b423e2e7c | test-vm-1 | ACTIVE | -          | Running     | work-net=172.16.11.8 |
 +--------------------------------------+-----------+--------+------------+-------------+----------------------+
 </pre>
 </div>
@@ -12754,21 +12781,29 @@ test-vm-1
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Floating-IP&#12398;&#21106;&#12426;&#24403;&#12390;">Floating IP&#12398;&#21106;&#12426;&#24403;&#12390;<a class="anchor-link" href="#Floating-IP&#12398;&#21106;&#12426;&#24403;&#12390;">&#182;</a></h4><p>作成した仮想マシンは自分で作成した内部ネットワークに接続されており、仮想マシン→外部 の接続は可能ですが、外部→仮想マシンの接続は行なえません。
-Floating IPを仮想マシンに割り当てて、外部→仮想マシンの接続が行えるようにします。
-Floating IPとは、外部ネットワーク（ここではpublic）のIPアドレスを仮想マシンへNATするための機能です。</p>
+Floating IPを仮想マシンに割り当てて、外部→仮想マシンの接続が行えるようにします。</p>
+<p>Floating IPとは、外部ネットワーク（ここではpublic）のIPアドレスを仮想マシンへNATするための機能です。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>まず、管理者が設定している public ネットワークから、Floating IPを確保します。</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron floatingip-create public
@@ -12783,26 +12818,28 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created a new floatingip:
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
-| created_at          | 2017-05-21T09:33:25Z                 |
+| created_at          | 2017-06-09T02:47:36Z                 |
 | description         |                                      |
 | fixed_ip_address    |                                      |
 | floating_ip_address | 192.168.99.205                       |
 | floating_network_id | 17e4bba8-2a15-46fb-ab54-fb463aee503c |
-| id                  | 768f424b-216d-40e4-9511-5d9c2de7ecc7 |
+| id                  | 741bdca1-cd81-4282-aaad-052b93fcfed9 |
 | port_id             |                                      |
 | project_id          | 44be7b065a154e33aacbe7dbca18c6be     |
 | revision_number     | 1                                    |
 | router_id           |                                      |
 | status              | DOWN                                 |
 | tenant_id           | 44be7b065a154e33aacbe7dbca18c6be     |
-| updated_at          | 2017-05-21T09:33:25Z                 |
+| updated_at          | 2017-06-09T02:47:36Z                 |
 +---------------------+--------------------------------------+
 </pre>
 </div>
@@ -12812,19 +12849,9 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>ここで表示されるUUIDをメモしておきます。</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron floatingip-list
@@ -12839,14 +12866,16 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+------------------------+------------------+---------------------+---------+
 | id                     | fixed_ip_address | floating_ip_address | port_id |
 +------------------------+------------------+---------------------+---------+
-| 768f424b-216d-         |                  | 192.168.99.205      |         |
-| 40e4-9511-5d9c2de7ecc7 |                  |                     |         |
+| 741bdca1-cd81-4282     |                  | 192.168.99.205      |         |
+| -aaad-052b93fcfed9     |                  |                     |         |
 +------------------------+------------------+---------------------+---------+
 </pre>
 </div>
@@ -12856,19 +12885,59 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>ここで表示される 172.16.11.xx のIPを持つポートのUUIDをメモしておきます（仮想サーバーに割り当っているIP）</p>
+<p>確保されたIPアドレスを、変数 FIP_UUID へ格納しておきます（後で使います）</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nv">FIP_UUID</span><span class="o">=</span><span class="sb">`</span>neutron floatingip-list -f value -c id --floating_ip_address<span class="o">=</span><span class="m">192</span>.168.99.205<span class="sb">`</span>
+<span class="nb">echo</span> <span class="nv">$FIP_UUID</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>741bdca1-cd81-4282-aaad-052b93fcfed9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>作成した仮想サーバーの論理ポートを調べます。Floating IPの割り当てには、この論理ポートに対して行うためです。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron port-list
@@ -12883,27 +12952,29 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+-----------------------+------+-------------------+-----------------------+
 | id                    | name | mac_address       | fixed_ips             |
 +-----------------------+------+-------------------+-----------------------+
-| 681879b1-53c0-495c-   |      | fa:16:3e:ef:eb:c1 | {&#34;subnet_id&#34;:         |
-| 8ce1-3eb69bb189bb     |      |                   | &#34;54718494-45cf-41e4   |
-|                       |      |                   | -8a7e-c4c36ba90d0d&#34;,  |
-|                       |      |                   | &#34;ip_address&#34;:         |
-|                       |      |                   | &#34;172.16.11.9&#34;}        |
-| 8bfa4a6b-aac1-4ffc-   |      | fa:16:3e:ba:53:67 | {&#34;subnet_id&#34;:         |
-| 9fd6-a872d194fdd6     |      |                   | &#34;54718494-45cf-41e4   |
-|                       |      |                   | -8a7e-c4c36ba90d0d&#34;,  |
-|                       |      |                   | &#34;ip_address&#34;:         |
-|                       |      |                   | &#34;172.16.11.254&#34;}      |
-| e860040f-d97d-4e4a-   |      | fa:16:3e:5a:65:20 | {&#34;subnet_id&#34;:         |
-| aa21-40e527a70cef     |      |                   | &#34;54718494-45cf-41e4   |
-|                       |      |                   | -8a7e-c4c36ba90d0d&#34;,  |
+| 4ed2c5e9-b018-4bd3-ad |      | fa:16:3e:f0:31:d5 | {&#34;subnet_id&#34;:         |
+| 25-46a42d3bfadb       |      |                   | &#34;3f782ee7-faf5-460f-  |
+|                       |      |                   | 852f-dcfc4287c737&#34;,   |
 |                       |      |                   | &#34;ip_address&#34;:         |
 |                       |      |                   | &#34;172.16.11.1&#34;}        |
+| ac501e70-35a9-45f8-82 |      | fa:16:3e:74:26:1c | {&#34;subnet_id&#34;:         |
+| 33-804c5859ee91       |      |                   | &#34;3f782ee7-faf5-460f-  |
+|                       |      |                   | 852f-dcfc4287c737&#34;,   |
+|                       |      |                   | &#34;ip_address&#34;:         |
+|                       |      |                   | &#34;172.16.11.254&#34;}      |
+| b8757c26-a59f-4927-a3 |      | fa:16:3e:5d:bf:1d | {&#34;subnet_id&#34;:         |
+| d8-ab5bf8bbfe99       |      |                   | &#34;3f782ee7-faf5-460f-  |
+|                       |      |                   | 852f-dcfc4287c737&#34;,   |
+|                       |      |                   | &#34;ip_address&#34;:         |
+|                       |      |                   | &#34;172.16.11.8&#34;}        |
 +-----------------------+------+-------------------+-----------------------+
 </pre>
 </div>
@@ -12913,22 +12984,13 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>コマンドの引数として、 <strong>Floating IPのUUID</strong> <strong>PortのUUID</strong> の順で指定します</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>neutron floatingip-associate 768f424b-216d-40e4-9511-5d9c2de7ecc7 681879b1-53c0-495c-8ce1-3eb69bb189bb
+<div class=" highlight hl-bash"><pre><span></span><span class="nv">PORT_UUID</span><span class="o">=</span><span class="sb">`</span>neutron port-list -f value -c id --fixed_ips <span class="nv">ip_address</span><span class="o">=</span><span class="m">172</span>.16.11.8<span class="sb">`</span>
+<span class="nb">echo</span> <span class="nv">$PORT_UUID</span>
 </pre></div>
 
 </div>
@@ -12940,10 +13002,52 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Associated floating IP 768f424b-216d-40e4-9511-5d9c2de7ecc7
+<pre>b8757c26-a59f-4927-a3d8-ab5bf8bbfe99
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>コマンドの引数として、 <strong>Floating IPのUUID</strong> <strong>PortのUUID</strong> の順で指定します</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>neutron floatingip-associate <span class="nv">$FIP_UUID</span> <span class="nv">$PORT_UUID</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Associated floating IP 741bdca1-cd81-4282-aaad-052b93fcfed9
 </pre>
 </div>
 </div>
@@ -12954,7 +13058,7 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova list
@@ -12969,13 +13073,15 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+--------------------------------------+-----------+--------+------------+-------------+--------------------------------------+
 | ID                                   | Name      | Status | Task State | Power State | Networks                             |
 +--------------------------------------+-----------+--------+------------+-------------+--------------------------------------+
-| b584bbde-38d3-41e5-a062-784b55d56aa0 | test-vm-1 | ACTIVE | -          | Running     | work-net=172.16.11.9, 192.168.99.205 |
+| 5c16c5b4-7362-493a-9c61-2b9b423e2e7c | test-vm-1 | ACTIVE | -          | Running     | work-net=172.16.11.8, 192.168.99.205 |
 +--------------------------------------+-----------+--------+------------+-------------+--------------------------------------+
 </pre>
 </div>
@@ -12985,8 +13091,7 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12999,7 +13104,7 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ssh -oStrictHostKeyChecking<span class="o">=</span>no -i ~/my-key.pem cirros@192.168.99.205 hostname
@@ -13014,7 +13119,9 @@ Floating IPとは、外部ネットワーク（ここではpublic）のIPアド�
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Warning: Permanently added &#39;192.168.99.205&#39; (RSA) to the list of known hosts.
@@ -13027,8 +13134,7 @@ test-vm-1
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13039,7 +13145,7 @@ test-vm-1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova delete test-vm-1
@@ -13054,7 +13160,9 @@ test-vm-1
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Request to delete server test-vm-1 has been accepted.
@@ -13068,7 +13176,7 @@ test-vm-1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>nova list
@@ -13083,7 +13191,9 @@ test-vm-1
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>+----+------+--------+------------+-------------+----------+
@@ -13098,8 +13208,7 @@ test-vm-1
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13110,10 +13219,10 @@ test-vm-1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>neutron floatingip-delete 768f424b-216d-40e4-9511-5d9c2de7ecc7
+<div class=" highlight hl-bash"><pre><span></span>neutron floatingip-delete <span class="nv">$FIP_UUID</span>
 </pre></div>
 
 </div>
@@ -13125,10 +13234,12 @@ test-vm-1
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Deleted floatingip(s): 768f424b-216d-40e4-9511-5d9c2de7ecc7
+<pre>Deleted floatingip(s): 741bdca1-cd81-4282-aaad-052b93fcfed9
 </pre>
 </div>
 </div>
@@ -13139,7 +13250,7 @@ test-vm-1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>neutron floatingip-list
@@ -13154,7 +13265,9 @@ test-vm-1
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
@@ -13165,6 +13278,15 @@ test-vm-1
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>作成した仮想ルーター、仮想ネットワークはこの後のハンズオン用に残しておきます。</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>

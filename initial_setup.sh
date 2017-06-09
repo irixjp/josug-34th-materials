@@ -3,7 +3,7 @@ systemctl stop NetworkManager
 systemctl disable NetworkManager
 systemctl disable firewalld
 systemctl stop firewalld
-/sbin/chkconfig network on
+systemctl enable network
 
 
 # IPアドレスを固定（インターフェース名は環境によって読み替える。IPアドレスを買える場合も以降の手順を読み替える。
@@ -117,7 +117,8 @@ reboot
 
 
 # 動作確認
-source ~/keystone_admin
+source ~/keystonerc_admin
+
 openstack compute service list
 openstack orchestration service list
 openstack volume service list
@@ -141,6 +142,9 @@ public ${FIP_CIDR}
 # テストイメージの導入
 wget http://download.cirros-cloud.net/0.3.5/cirros-0.3.5-x86_64-disk.img
 openstack image create --disk-format qcow2 --public --file cirros-0.3.5-x86_64-disk.img cirros-0.3.5
+
+wget http://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2
+openstack image create --disk-format qcow2 --public --file CentOS-7-x86_64-GenericCloud.qcow2 CentOS7
 
 # 一般ユーザーの作成
 openstack role create handson
