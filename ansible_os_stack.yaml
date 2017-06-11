@@ -10,7 +10,7 @@
         name: "simple-server"
         cloud: handson1
         state: present
-        template: "simple-server.yaml"
+        template: "simple-system.yaml"
         wait: yes
       register: stack_return
 
