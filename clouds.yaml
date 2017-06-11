@@ -1,0 +1,8 @@
+clouds:
+  handson1:
+    auth:
+      auth_url: http://192.168.99.199:5000/v2.0/
+      project_name: project01
+      username: openstack
+      password: openstack
+    region_name: RegionOne
